@@ -2,11 +2,11 @@
 #include <string>
 
 int main() {
-	std::string name;
-	std::cout << "What is your name?\n";
-	std::cin >> name;
-	std::cout << "Hello, " << name << "!\n";
-	return 0;
+	int a;
+	int b;
+	int c;
+	std::cin >> a >> b >> c;
+	std::cout << a << " " << b << " " << c << "\n";
 }
 
 
