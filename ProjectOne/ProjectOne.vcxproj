@@ -130,6 +130,7 @@
   <ItemGroup>
     <ClCompile Include="HelloWorld.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Variables Stream_input_and_output.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />
