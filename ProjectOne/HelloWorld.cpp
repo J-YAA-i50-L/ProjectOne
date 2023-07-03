@@ -4,10 +4,9 @@
 #include <cstdint>  // целочисленные типы с фиксированным размером
 
 int main() {
-	unsigned int a = 123456;  // на 64-битной платформе sizeof(a) == 4
-
-	// Произведение a * a не помещается в 4 байта, так как оно больше 2^32
-	std::cout << a * a << "\n";
+	char c = 'A';
+	c += 25;  // увеличиваем ASCII-код символа на 25
+	std::cout << c << "\n";  // Z
 }
 
 
@@ -56,3 +55,14 @@ int SimpleDataTypesVolumeMaxMin() {
 		<< "maximum value: " << std::numeric_limits<int>::max() << "\n";
 	return 0;
 }
+
+int TypesOfDivision() {
+	int a = 7, b = 3;
+	int q = a / b;  // 2
+	int r = a % b;  // 1
+	// Если при делении нужно получить обычное частное, то один из аргументов 
+	// нужно привести к вещественному типу
+	double d = static_cast<double>(a) / b; // 2.333....
+	return 0;
+}
+
