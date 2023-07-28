@@ -3,10 +3,11 @@
 #include <limits>  // необходимо для numeric_limits
 #include <cstdint>  // целочисленные типы с фиксированным размером
 
+
 int main() {
-	char c = 'A';
-	c += 25;  // увеличиваем ASCII-код символа на 25
-	std::cout << c << "\n";  // Z
+    int n;
+    std::cin >> n;
+    std::cout << (n * n + n) / 2 << "\n";
 }
 
 
@@ -66,3 +67,18 @@ int TypesOfDivision() {
 	return 0;
 }
 
+
+int TaskTwoA() {
+	double cm;
+	double dume = 2.34;
+	std::cin >> cm;
+	std::cout << cm * dume;
+	return 0;
+}
+
+int TaskTwoB() {
+	int a, b;
+	std::cin >> a >> b;
+	std::cout << a + b;
+	return 0;
+}
